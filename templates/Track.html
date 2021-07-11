@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form method="post">
+<input type="password" id="pin" placeholder="Enter UUID of Device">
+<input type="submit" id="goButton" action= "{{ url_for('Start') }}">
+
+</form>
+{% endblock content %}

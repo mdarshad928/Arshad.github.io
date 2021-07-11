@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Home</h1>
+ <div class="content-section" style="text-align: justify;">
+  <h3>Welcome to Our Major Project</h3>
+<p>Different Covid-19 vaccines require different temperature requirements to maintain their potency. Excessive heat or cold can damage vaccines. The supply chain of vaccines needs to maintain optimal conditions during the transport, storage, and handling of vaccines, starting at the manufacturer and ending with the administration of the vaccine to the client. Proper storage temperatures must be maintained at every link in the chain. This supply chain is also called the Cold chain. Real-time monitoring of temperature to monitor the cold chain becomes essential to carry out large-scale immunization programmes smoothly. </p>
+<p>This IoT monitoring system consists of a Processing board, a Temperature Sensor and a GPS module. The sensors are connected to the monitoring system via a single wire interface. The processing board Raspberry Pi 4 is connected to the Internet to send the data collected from the sensors to the server in real-time. The collected data such as Temperature of vaccine, Location of vaccine, and Time at which data is collected is processed in the system’s processing board and sent via an API to the server.</p>
+</div>
+{% endblock content %}
+
+{% block content1 %}
+
+<div class="col-md-6">
+<h1>Web Application</h1>
+ <div class="content-section">
+<p>This web application is designed to display all the data in real-time sent by the monitoring Device.</p>
+<p> The real-time location of the vaccine is displayed on Google maps rendered on this web application's <strong>Track Page</strong>.</p><p> A CSV file of all the data can also be downloaded for further analysis.</p>
+{% endblock %}
